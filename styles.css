@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-a:hover{
-    color: purple;
-}
+
 body{
     margin: 0;
 }
+html{scroll-behavior:smooth}
 
 /* START OF HEADER */
 .header{
@@ -38,8 +39,6 @@ body{
     font-size: 18px;
     text-decoration: none;
 }
-
-
 .header .lower{
     display: flex;
     flex-direction: row;
@@ -75,29 +74,29 @@ body{
 .lower-text .subtext{
     color: #e5e7eb;
 }
-
-.lower-text button{
+#signup-button{
     background-color: #3882F6;
-    font-weight: bolder;
+    font-weight: bold;
     color: #F9FAF8;
     font-size: 18px;
+    padding: 6px;
     border-radius: 6px;
     border: none;
     transition: transform 0.3s;
 }
-.lower-text button:hover{
+#signup-button:hover{
     transform: scale(0.8);
 }
 /* END OF HEADER STYLES */
 
 /* START OF SECTION ONE */
-.section-one{
+#section-one{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.section-one .title{
+.info-title{
     font-size: 36px;
     font-weight: bolder;
 }
@@ -132,7 +131,7 @@ body{
 /* END OF SECTION ONE */
 
 /* START OF SECTION TWO */
-.section-two{
+#section-two{
 
     padding: 5% 20%;
     background-color: #1f2937;
@@ -154,4 +153,33 @@ body{
     color: #F9FAF8;
     font-size: 18px;
     font-weight: bold;
+}
+/* END OF SECTION TWO */
+
+/* START OF SECTION THREE */
+#section-three{
+    padding: 64px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background-color: #3882F6;
+    border-radius: 4px;
+}
+.signup-text{
+    display: flex;
+    flex-direction: column;
+}
+.signup-text *{
+    margin: 0;
+    color: #F9FAF8;
+}
+.sign-up #signup-button{
+    border: 2px solid#F9FAF8;
 }
